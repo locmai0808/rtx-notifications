@@ -1,0 +1,19 @@
+{
+  "name": "nvidia-bot",
+  "version": "1.0.0",
+  "description": "nvidia-notification-bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Loc Mai",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "node-fetch": "^2.6.1",
+    "node-notifier": "^8.0.0",
+    "open": "^7.2.1",
+    "play-sound": "^1.1.3"
+  }
+}
