@@ -7,13 +7,10 @@ var player = require('play-sound')((opts = {}));
 const PROPS = {
   5438481600: 'https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3090/',
   5438481700: 'https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3080/',
-  5443202600: 'https://nomnomnow.com',
 };
 
 const interval = setInterval(function () {
-  fetch(
-    'https://api-prod.nvidia.com/direct-sales-shop/DR/products/en_us/USD/5438481600,5438481700,5443202600'
-  )
+  fetch('https://api-prod.nvidia.com/direct-sales-shop/DR/products/en_us/USD/5438481600,5438481700')
     .then((res) => res.json())
     .then((res) => {
       const products = res.products.product;
